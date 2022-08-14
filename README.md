@@ -1,2 +1,2 @@
 # Omniverse
-Expanding Visual NFT Experience
+Expanding the NFT Experience
