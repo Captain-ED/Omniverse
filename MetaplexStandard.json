@@ -8,22 +8,6 @@
       {
         "trait_type": "Talent",
         "value": "Athlete"
-      },
-      {
-        "trait_type": "IQ",
-        "value": "Genius"
-      },
-      {
-        "trait_type": "Luck",
-        "value": "Blessed"
-      },
-      {
-        "trait_type": "Pet Pref",
-        "value": "Dogs"
-      },
-      {
-        "trait_type": "Temprament",
-        "value": "Calm"
       }
     ],
     "properties": {
