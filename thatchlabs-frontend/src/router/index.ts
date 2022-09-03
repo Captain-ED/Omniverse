@@ -37,6 +37,15 @@ const routes = [
 			isPublic: false,
 			showWhileLogin: true
 		}
+	},
+	{
+		path: '/token',
+		name: 'Token',
+		component: () => import('../views/token.vue'),
+		meta: {
+			isPublic: false,
+			showWhileLogin: true
+		}
 	}, 
 ]
 
