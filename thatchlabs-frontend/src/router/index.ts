@@ -28,7 +28,16 @@ const routes = [
 			isPublic: false,
 			showWhileLogin: true
 		}
-	}, 
+	},
+	{
+		path: '/mint-persona',
+		name: 'Mint Persona',
+		component: () => import('../views/create-persona.vue'),
+		meta: {
+			isPublic: false,
+			showWhileLogin: true
+		}
+	},
 	{
 		path: '/gang',
 		name: 'Gang',

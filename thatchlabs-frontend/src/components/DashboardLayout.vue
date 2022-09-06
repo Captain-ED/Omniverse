@@ -8,8 +8,8 @@
             <ul class="mt-10">
             	<li class="text-center w-full flex justify-center">
             		<router-link to="/persona">
-            			<img src="../assets/persona.png" v-if="currentRouter.split('/')[1] === 'persona'">
-                        <img src="../assets/noun-heisenberg-54737.png" v-if="currentRouter.split('/')[1] !== 'persona'">
+            			<img src="../assets/persona.png" v-if="currentRouter.split('/')[1].includes('persona')">
+                        <img src="../assets/noun-heisenberg-54737.png" v-if="!currentRouter.split('/')[1].includes('persona')">
             		</router-link>
             	</li>
             	<li class="text-center w-full flex justify-center mt-10">
