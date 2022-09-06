@@ -14,8 +14,8 @@
             	</li>
             	<li class="text-center w-full flex justify-center mt-10">
             		<router-link to="/gang">
-                        <img src="../assets/gang.png" v-if="currentRouter.split('/')[1] === 'gang'">
-            			<img src="../assets/324411.png" v-if="currentRouter.split('/')[1] !== 'gang'">
+                        <img src="../assets/gang.png" v-if="currentRouter.split('/')[1].includes('gang')">
+            			<img src="../assets/324411.png" v-if="!currentRouter.split('/')[1].includes('gang')">
             		</router-link>
             	</li>
             	<li class="text-center w-full flex justify-center mt-10">

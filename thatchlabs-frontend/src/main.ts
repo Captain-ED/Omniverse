@@ -16,7 +16,7 @@ library.add(fas, far, fab)
 import Swal, { SweetAlertOptions } from "sweetalert2";
 //import "~/node_modules/@sweetalert2/theme-bootstrap-4";
 const options = {
-	confirmButtonColor: '#581c87',
+	//confirmButtonColor: '#581c87',
 	cancelButtonColor: '#ff7674'
 }
 

@@ -12,12 +12,12 @@
 					</div>
 					<div class="grid grid-cols-2 gap-3 mt-5">
 						<template v-for="i in 20" :key="i">
-							<nft-card />
+							<nft-card @click="selectGangItem(i)" :isItemSelected="selectedNft === i" />
 						</template>
 					</div>
 				</div>
 				<div class="w-56 pl-5 mt-10">
-					<button class="shadow py-4 py-2 bg-black text-white rounded-full" style="width: 130px; height: 50px;">Select</button>
+					<button class="shadow py-4 py-2 bg-black text-white rounded-full" style="width: 130px; height: 50px;" @click="processSelectedGang">Select</button>
 				</div>
 			</div>
 		</div>
@@ -25,9 +25,30 @@
 </template>
 
 <script lang="ts" setup>
+import { ref, onMounted, inject  } from "vue";
+import { useRouter, useRoute } from 'vue-router'
 import DashboardLayout from '../components/DashboardLayout.vue';
 import NftCard from '../components/NftCard.vue';
+	//let selectedNft = null;
+	const router = useRouter();
+	const selectedNft = ref(0);
+	const swal = inject("$swal");
 
+	const selectGangItem = (index) => {
+		selectedNft.value = index
+		console.log(index)
+	};
+
+	const processSelectedGang = () => {
+		if(selectedNft.value <= 0) {
+			swal.fire({
+				icon: 'error',
+				text: 'Please select a nft to proceed'
+			})
+			return;
+		}
+		router.push('/mint-gang')
+	};
 </script>
 
 <style scoped>

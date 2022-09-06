@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.error{
+    color: rgb(240, 49, 49);
+    font-size: 13.5px !important;
+    font-style: normal;
+}

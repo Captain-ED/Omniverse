@@ -39,6 +39,15 @@ const routes = [
 		}
 	},
 	{
+		path: '/mint-gang',
+		name: 'Mint Gang',
+		component: () => import('../views/gangs/create-gang.vue'),
+		meta: {
+			isPublic: false,
+			showWhileLogin: true
+		}
+	},
+	{
 		path: '/token',
 		name: 'Token',
 		component: () => import('../views/token.vue'),
