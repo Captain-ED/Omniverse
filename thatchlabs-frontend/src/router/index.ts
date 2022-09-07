@@ -28,11 +28,56 @@ const routes = [
 			isPublic: false,
 			showWhileLogin: true
 		}
-	}, 
+	},
+	{
+		path: '/mint-persona',
+		name: 'Mint Persona',
+		component: () => import('../views/create-persona.vue'),
+		meta: {
+			isPublic: false,
+			showWhileLogin: true
+		}
+	},
 	{
 		path: '/gang',
 		name: 'Gang',
 		component: () => import('../views/gang.vue'),
+		meta: {
+			isPublic: false,
+			showWhileLogin: true
+		}
+	},
+	{
+		path: '/mint-gang',
+		name: 'Mint Gang',
+		component: () => import('../views/gangs/create-gang.vue'),
+		meta: {
+			isPublic: false,
+			showWhileLogin: true
+		}
+	},
+	{
+		path: '/token',
+		name: 'Token',
+		component: () => import('../views/token.vue'),
+		meta: {
+			isPublic: false,
+			showWhileLogin: true
+		}
+	}, 
+	{
+		path: '/persona-token',
+		name: 'Persona Token',
+		component: () => import('../views/manage-persona.vue'),
+		meta: {
+			isPublic: false,
+			showWhileLogin: true
+		}
+	},
+	{
+		path: '/gang-token',
+		name: 'Gang Token',
+		component: () => import('../views/manage-gang.vue'),
 		meta: {
 			isPublic: false,
 			showWhileLogin: true

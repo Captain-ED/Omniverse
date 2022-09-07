@@ -2,11 +2,14 @@
     <dashboard-layout>
         <div class="grid grid-cols-2">
         	<div class="pl-4 pt-5">
+                <div class="pt-10">
+                    
+                </div>
         		<h2 class="text-gray-700 text-5xl font-semibold">CONNECT WALLET</h2>
-        		<h5 class="text-4xl font-semibold">Thatch Labs</h5>
+        		<h5 class="text-5xl font-semibold">Thatch Labs</h5>
         	</div>
-        	<div class="px-3 pt-5">
-        		<div class="bg-gray-800 pb-10 pt-4 px-5 flex flex-col justify-center items-center">
+        	<div class="px-3 pt-5 flex flex-row justify-end">
+        		<div class="bg-gray-800 pb-10 pt-4 px-5 flex flex-col justify-center items-center login-container rounded-xl">
         			<div class="flex flex-row justify-evenly mt-4 w-full">
         				<div class="" style="width: 40px;">
                             <font-awesome-icon icon="bars" class="text-xl text-white" :style="{marginRight: '10px'}" />            
@@ -45,3 +48,10 @@
 import DashboardLayout from '../components/DashboardLayout.vue';
 
 </script>
+
+<style scoped>
+.login-container{
+    max-width: 400px;
+    min-width: 400px;
+}
+</style>

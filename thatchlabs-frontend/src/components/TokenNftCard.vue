@@ -7,6 +7,7 @@
 			<div class="flex flex-col items-start justify-center">
 				<h5 class="font-semibold overflow-ellipsis">DUSTY YETI </h5>
 				<h5 class="font-semibold text-sm "># 4372</h5>
+				<h5 class="font-semibold text-sm ">00001</h5>
 			</div>
 		</div>
 	</div>
