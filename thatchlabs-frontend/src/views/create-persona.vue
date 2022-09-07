@@ -53,7 +53,7 @@
 		                </div>
 		        	</div>
 		        	<div class="px-3 pt-5 flex flex-row justify-end">
-		        		<div class="bg-gray-800 pb-10 pt-4 px-5 flex flex-col justify-center items-center login-container">
+		        		<div class="bg-gray-800 pb-10 pt-4 px-5 flex flex-col justify-center items-center login-container rounded-xl">
 		        			<div class="flex flex-row justify-center mt-4 w-full">
 		        				<div style="">
 		                            <h5 class="text-center text-white font-semibold">Wallet1 023949c2342304322</h5>            

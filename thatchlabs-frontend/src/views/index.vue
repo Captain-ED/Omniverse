@@ -9,7 +9,7 @@
         		<h5 class="text-5xl font-semibold">Thatch Labs</h5>
         	</div>
         	<div class="px-3 pt-5 flex flex-row justify-end">
-        		<div class="bg-gray-800 pb-10 pt-4 px-5 flex flex-col justify-center items-center login-container">
+        		<div class="bg-gray-800 pb-10 pt-4 px-5 flex flex-col justify-center items-center login-container rounded-xl">
         			<div class="flex flex-row justify-evenly mt-4 w-full">
         				<div class="" style="width: 40px;">
                             <font-awesome-icon icon="bars" class="text-xl text-white" :style="{marginRight: '10px'}" />            

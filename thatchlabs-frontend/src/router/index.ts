@@ -65,6 +65,24 @@ const routes = [
 			showWhileLogin: true
 		}
 	}, 
+	{
+		path: '/persona-token',
+		name: 'Persona Token',
+		component: () => import('../views/manage-persona.vue'),
+		meta: {
+			isPublic: false,
+			showWhileLogin: true
+		}
+	},
+	{
+		path: '/gang-token',
+		name: 'Gang Token',
+		component: () => import('../views/manage-gang.vue'),
+		meta: {
+			isPublic: false,
+			showWhileLogin: true
+		}
+	}, 
 ]
 
 const router = createRouter({
