@@ -3,13 +3,12 @@ const {EventEmitter} = require("node:events");
 
 
 const express = require("express");
-const {Metaplex, keypairIdentity, bundlrStorage} = require("@metaplex-foundation/js");
-const {Connection, clusterApiUrl, Keypair} = require("@solana/web3.js");
 
 
 
 const env = require("./helpers/getEnv");
 env.config();
+EventEmitter.captureRejections = true;
 
 //routes
 const mainRoutes = require("./routes/mainRoutes");
@@ -17,13 +16,7 @@ const mainRoutes = require("./routes/mainRoutes");
 const app = express();
 const server = http.createServer();
 const emitter = new EventEmitter();
-const wallet = Keypair.generate();
 
-//connect to the solana blockchain devnet
-const connection = new Connection(clusterApiUrl('devnet'));
-const metaplex = Metaplex.make(connection).use(keypairIdentity(wallet)).use(bundlrStorage());
-
-console.log(metaplex);
 
 
 
@@ -57,9 +50,9 @@ app.use("*", (req, res, next) => {
 app.use((error, req, res, next) => {
     res.status(error.status);
     res.json({
-        "message": error.message,
-        "status": "error",
-        "statusCode": error.status
+        message: error.message,
+        status: "error",
+        statusCode: error.status
     })
     next();
 })

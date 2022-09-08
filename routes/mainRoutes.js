@@ -1,7 +1,7 @@
 const {Router} = require("express");
 
 
-const {home} = require("../controllers/mainController");
+const {home, createNFT} = require("../controllers/mainController");
 
 
 const router = Router();
@@ -9,6 +9,9 @@ const router = Router();
 
 
 router.get("/", home);
+
+
+router.post("/create", createNFT);
 
 
 

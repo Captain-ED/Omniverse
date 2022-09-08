@@ -1,0 +1,1 @@
+module.exports = val => !val ? true : typeof val === 'number' ? false : val.trim() === "" ? true : false;
